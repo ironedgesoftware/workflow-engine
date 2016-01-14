@@ -20,6 +20,7 @@
 
         "ironedge/config":              "^1.0",
         "ironedge/cache":               "^1.0",
+        "ironedge/graphs":              "^1.0",
 
         "psr/log":                      "^1.0",
 
