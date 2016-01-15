@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the workflow-engine package.
  *
@@ -8,16 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace IronEdge\Component\WorkflowEngine;
+namespace IronEdge\Component\WorkflowEngine\Test\Integration;
 
-use IronEdge\Component\WorkflowEngine\Flow\Node\Flow;
 
 /*
  * @author Gustavo Falco <comfortablynumb84@gmail.com>
  */
-interface EngineInterface
+abstract class AbstractTestCase extends \PHPUnit_Framework_TestCase
 {
 
-
-    public function execute(Flow $flow, array $options = []);
 }

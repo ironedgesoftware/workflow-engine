@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the workflow-engine package.
  *
@@ -8,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace IronEdge\Component\WorkflowEngine;
+namespace IronEdge\Component\WorkflowEngine\Exception;
 
-use IronEdge\Component\WorkflowEngine\Flow\Node\Flow;
 
 /*
  * @author Gustavo Falco <comfortablynumb84@gmail.com>
  */
-interface EngineInterface
+class ValidationException extends BaseException
 {
-
-
-    public function execute(Flow $flow, array $options = []);
+    public static function create($msg)
+    {
+        return new self($msg);
+    }
 }
